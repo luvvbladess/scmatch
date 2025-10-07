@@ -1,3 +1,5 @@
+#ИИ модуль
+
 from typing import Any, Dict, List, Optional
 
 import httpx
@@ -82,4 +84,5 @@ async def aclose_http_client():
         try:
             await _httpx_client.aclose()
         finally:
+
             _httpx_client = None
