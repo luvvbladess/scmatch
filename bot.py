@@ -1,3 +1,5 @@
+#Основа
+
 import asyncio
 import json
 from typing import Any, Dict, List, Optional
@@ -869,4 +871,5 @@ if __name__ == "__main__":
     try:
         asyncio.run(main())
     except (KeyboardInterrupt, SystemExit):
+
         logger.info("Бот остановлен.")
