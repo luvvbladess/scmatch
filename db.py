@@ -1,3 +1,5 @@
+#Управление БД
+
 import json
 import time
 from typing import Any, Dict, List, Optional, Tuple
@@ -209,4 +211,5 @@ async def set_virtual_state(user_id: int, partner_gender: Optional[str], history
                 "INSERT OR REPLACE INTO virtual_chats (user_id, partner_gender, history, updated_at) VALUES (?, ?, ?, ?)",
                 (user_id, partner_gender, json.dumps(history, ensure_ascii=False), now_ts()),
             )
+
         await db.commit()
