@@ -1,3 +1,5 @@
+#Токены
+
 import logging
 import os
 
@@ -20,3 +22,4 @@ OPENAI_TIMEOUT = 30.0  # секунды
 # Логирование
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("dating-bot")
+
